@@ -1,0 +1,6 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: hand_rviz
+    relative_path: urdf/combined_description.xacro
+  srdf:
+    relative_path: srdf/combined_arm.srdf.xacro

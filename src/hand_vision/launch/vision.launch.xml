@@ -1,0 +1,16 @@
+<launch>
+    <!-- Declare launch argument 'camera' with default value 'usb' -->
+    <arg name="camera" default="usb"/>
+
+    <!-- Launch the camera node based on the selected argument -->
+    <node pkg="usb_cam" exec="usb_cam_node_exe" name="camera_node" output="screen" if="$(eval '\'$(var camera)\'==\'usb\'')" />
+
+    <!-- Launch the MediaPipe hand tracking node -->
+    <node pkg="hand_vision" exec="hand_angle_node" name="hand_angle_node" output="screen" if="$(eval '\'$(var camera)\'==\'usb\'')" />
+
+    <!-- Launch meta quest node for tracking if source == quest -->
+    <node pkg="hand_vision" exec="hand_angle_quest" name="hand_angle_quest" output="screen" if="$(eval '\'$(var camera)\'==\'quest\'')" />
+
+    <!-- Launch the hand joint gui node -->
+    <node pkg="hand_vision" exec="hand_joint_gui_node" name="hand_joint_gui_node" output="screen" />
+</launch>

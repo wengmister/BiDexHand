@@ -1,0 +1,29 @@
+<launch>
+    <arg name="usb" default="/dev/ttyACM0"/>
+    <!-- usb or quest -->
+    <arg name="cam" default="quest"/>
+
+    <!-- Vision nodes -->
+    <include file="$(find-pkg-share hand_vision)/launch/vision.launch.xml">
+        <arg name="camera" value="$(var cam)"/>
+    </include>
+
+    <!-- Servo control node -->
+    <include file="$(find-pkg-share hand_servo_control)/launch/multi_servo.launch.xml">
+        <arg name="usb" value="$(var usb)"/>
+        <arg name="input_mode" value="streaming"/>
+    </include>
+
+    <!-- Hand motion shadowing node with usb cam -->
+    <node pkg="hand_motion_shadowing" exec="hand_shadowing" name="hand_shadowing_node" output="screen" if="$(eval '\'$(var cam)\'==\'usb\'')">
+        <param from="$(find-pkg-share hand_motion_shadowing)/config/v2mp.yaml" />
+    </node>
+
+    <node pkg="hand_motion_shadowing" exec="hand_shadowing" name="hand_shadowing_node" output="screen" if="$(eval '\'$(var cam)\'==\'quest\'')">
+        <param from="$(find-pkg-share hand_motion_shadowing)/config/v3quest.yaml" />
+    </node>
+
+    <!-- Forwarding servo_input to hand/joint_states -->
+    <node pkg="hand_rviz" exec="joint_state_forwarding" name="joint_state_forwarding" output="screen"/>
+
+</launch>

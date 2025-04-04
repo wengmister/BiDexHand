@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="combined_robot">
+  <xacro:macro name="fer_arm" params="arm_id:='fer' ">
+
+    <xacro:include filename="$(find franka_fer_moveit_config)/srdf/group_definition.xacro"/>
+    <xacro:group_definition arm_id="${arm_id}" group_name="${arm_id}_arm" tip_link="${arm_id}_link8"/>
+
+    <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="base"/>
+    <disable_collisions link1="${arm_id}_link0" link2="${arm_id}_link1" reason="Adjacent"/>
+    <disable_collisions link1="${arm_id}_link0" link2="${arm_id}_link2" reason="Never"/>
+    <disable_collisions link1="${arm_id}_link0" link2="${arm_id}_link3" reason="Never"/>
+    <disable_collisions link1="${arm_id}_link0" link2="${arm_id}_link4" reason="Never"/>
+    <disable_collisions link1="${arm_id}_link1" link2="${arm_id}_link2" reason="Adjacent"/>
+    <disable_collisions link1="${arm_id}_link1" link2="${arm_id}_link3" reason="Never"/>
+    <disable_collisions link1="${arm_id}_link1" link2="${arm_id}_link4" reason="Never"/>
+    <disable_collisions link1="${arm_id}_link2" link2="${arm_id}_link3" reason="Adjacent"/>
+    <disable_collisions link1="${arm_id}_link2" link2="${arm_id}_link4" reason="Never"/>
+    <disable_collisions link1="${arm_id}_link2" link2="${arm_id}_link6" reason="Never"/>
+    <disable_collisions link1="${arm_id}_link3" link2="${arm_id}_link4" reason="Adjacent"/>
+    <disable_collisions link1="${arm_id}_link3" link2="${arm_id}_link5" reason="Never"/>
+    <disable_collisions link1="${arm_id}_link3" link2="${arm_id}_link6" reason="Never"/>
+    <disable_collisions link1="${arm_id}_link3" link2="${arm_id}_link7" reason="Never"/>
+    <disable_collisions link1="${arm_id}_link4" link2="${arm_id}_link5" reason="Adjacent"/>
+    <disable_collisions link1="${arm_id}_link4" link2="${arm_id}_link6" reason="Never"/>
+    <disable_collisions link1="${arm_id}_link4" link2="${arm_id}_link7" reason="Never"/>
+    <disable_collisions link1="${arm_id}_link4" link2="${arm_id}_link8" reason="Never"/>
+    <disable_collisions link1="${arm_id}_link5" link2="${arm_id}_link6" reason="Adjacent"/>
+    <disable_collisions link1="${arm_id}_link6" link2="${arm_id}_link7" reason="Adjacent"/>
+    <disable_collisions link1="${arm_id}_link6" link2="${arm_id}_link8" reason="Default"/>
+    <disable_collisions link1="${arm_id}_link7" link2="${arm_id}_link8" reason="Adjacent"/>
+    <disable_collisions link1="${arm_id}_link7" link2="hand_base_link" reason="Adjacent"/>
+    <disable_collisions link1="${arm_id}_link5" link2="${arm_id}_link7" reason="Default"/>
+    <disable_collisions link1="${arm_id}_link5" link2="tca_link" reason="Default"/>
+    <disable_collisions link1="${arm_id}_link5" link2="tcf_link" reason="Default"/>
+    <disable_collisions link1="${arm_id}_link5" link2="tma_link" reason="Default"/>
+    <disable_collisions link1="${arm_id}_link5" link2="tmf_link" reason="Default"/>
+  </xacro:macro>
+</robot>

@@ -1,0 +1,5 @@
+int32 channel    # Servo channel (0-15)
+int32 position   # Servo position (-90 to +90)
+---
+bool success     # Whether the command was successfully processed
+string message   # Any additional information or error message

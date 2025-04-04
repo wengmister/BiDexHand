@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="combined_robot">
+
+    <xacro:include filename="$(find franka_description)/robots/common/franka_robot.xacro"/>
+
+    <!-- Name for this robot -->
+    <xacro:arg name="arm_id" default="fer" />
+
+    <!-- Should an end-effector be mounted at the flange?" -->
+    <xacro:arg name="hand" default="false" />
+
+    <!-- Which end-effector would be mounted at the flange?" -->
+    <xacro:arg name="ee_id" default="none" />
+
+    <!-- Is the robot being simulated in gazebo?" -->
+    <xacro:arg name="gazebo" default="false" />
+    <!-- If `gazebo` arg is set, to which frame shall $(arm_id)_link0 be parented. Empty string for not fixing at all -->
+    <xacro:arg name="parent" default="world" />
+    <!-- If `gazebo` arg is set and `parent` not empty, what position offset between `parent` & $(arm_id)_link0 -->
+    <xacro:arg name="xyz" default="0 0 0" />
+    <!-- If `gazebo` arg is set and `parent` not empty, what rotation offset between `parent` & $(arm_id)_link0 -->
+    <xacro:arg name="rpy" default="0 0 0" />
+
+    <!-- Should self-collision be enabled? -->
+    <xacro:arg name="with_sc" default="false" />
+
+    <!-- Is the robot being controlled with ros2_control?" -->
+    <xacro:arg name="ros2_control" default="true" />
+    <!-- IP address or hostname of the robot" -->
+    <xacro:arg name="robot_ip" default="" />
+    <!-- Should a fake hardware be used? -->
+    <xacro:arg name="use_fake_hardware" default="true" />
+    <!-- Should fake sensors be used? -->
+    <xacro:arg name="fake_sensor_commands" default="true" />
+    <!-- Should the robot be spawned in Gazebo with effort interfaces?" -->
+    <xacro:arg name="gazebo_effort" default="false" />
+
+    <xacro:franka_robot arm_id="$(arg arm_id)"
+                        joint_limits="${xacro.load_yaml('$(find franka_description)/robots/$(arg arm_id)/joint_limits.yaml')}"
+                        inertials="${xacro.load_yaml('$(find franka_description)/robots/$(arg arm_id)/inertials.yaml')}"
+                        kinematics="${xacro.load_yaml('$(find franka_description)/robots/$(arg arm_id)/kinematics.yaml')}"
+                        dynamics="${xacro.load_yaml('$(find franka_description)/robots/$(arg arm_id)/dynamics.yaml')}"
+                        gazebo="$(arg gazebo)"
+                        hand="$(arg hand)"
+                        ee_id="$(arg ee_id)"
+                        with_sc="$(arg with_sc)"
+                        ros2_control="$(arg ros2_control)"
+                        robot_ip="$(arg robot_ip)"
+                        use_fake_hardware="$(arg use_fake_hardware)"
+                        fake_sensor_commands="$(arg fake_sensor_commands)"
+                        gazebo_effort="$(arg gazebo_effort)" />
+
+    <!-- Include hand URDF -->
+    <!-- <xacro:include filename="$(find hand_rviz)/urdf/hand_urdf.urdf"/> -->
+    
+    <!-- collision free version -->
+    <xacro:include filename="$(find hand_rviz)/urdf/hand_urdf_cf.urdf"/>
+    <!-- Attach manipulator URDF via fixed joint -->
+    <joint name="hand_attachment_joint" type="fixed">
+        <parent link="fer_link8"/>
+        <child link="hand_base_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0.785"/>
+    </joint>
+
+</robot>

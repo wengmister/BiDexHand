@@ -1,0 +1,9 @@
+<launch>
+    <include file="$(find-pkg-share realsense2_camera)/launch/rs_launch.py">
+        <arg name="camera_name" value="wrist"/>
+        <arg name="pointcloud.enable" value="true"/> 
+        <arg name="align_depth.enable" value="true"/>
+    </include> 
+
+    <node pkg="hand_vision" exec="wrist_camera_node" name="wrist_camera_node" output="screen" />
+</launch>

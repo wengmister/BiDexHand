@@ -1,0 +1,618 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 70
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /MotionPlanning1
+        - /TF1
+        - /TF1/Tree1/base1/fer_link01
+        - /TF1/Tree1/base1/fer_link01/fer_link11
+        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21
+        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21/fer_link31
+        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21/fer_link31/fer_link41
+        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21/fer_link31/fer_link41/fer_link51
+        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21/fer_link31/fer_link41/fer_link51/fer_link61
+        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21/fer_link31/fer_link41/fer_link51/fer_link61/fer_link71
+        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21/fer_link31/fer_link41/fer_link51/fer_link61/fer_link71/fer_link81
+        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21/fer_link31/fer_link41/fer_link51/fer_link61/fer_link71/fer_link81/hand_base_link1
+      Splitter Ratio: 0.5
+    Tree Height: 292
+  - Class: rviz_common/Help
+    Name: Help
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Acceleration_Scaling_Factor: 0.2
+      Class: moveit_rviz_plugin/MotionPlanning
+      Enabled: true
+      Move Group Namespace: ""
+      MoveIt_Allow_Approximate_IK: false
+      MoveIt_Allow_External_Program: false
+      MoveIt_Allow_Replanning: false
+      MoveIt_Allow_Sensor_Positioning: false
+      MoveIt_Planning_Attempts: 10
+      MoveIt_Planning_Time: 5
+      MoveIt_Use_Cartesian_Path: false
+      MoveIt_Use_Constraint_Aware_IK: false
+      MoveIt_Workspace:
+        Center:
+          X: 0
+          Y: 0
+          Z: 0
+        Size:
+          X: 2
+          Y: 2
+          Z: 2
+      Name: MotionPlanning
+      Planned Path:
+        Color Enabled: false
+        Interrupt Display: false
+        Links:
+          All Links Enabled: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Link Tree Style: Links in Alphabetic Order
+          base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          fer_link0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link8:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          hand_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          idf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ima_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          imf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ipf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          mdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          mma_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          mmf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          mpf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          pdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          pma_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          pmf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ppf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rma_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rmf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rpf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tca_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tcf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tma_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tmf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+        Loop Animation: false
+        Robot Alpha: 0.5
+        Robot Color: 150; 50; 150
+        Show Robot Collision: false
+        Show Robot Visual: true
+        Show Trail: false
+        State Display Time: 0.05 s
+        Trail Step Size: 1
+        Trajectory Topic: display_planned_path
+        Use Sim Time: false
+      Planning Metrics:
+        Payload: 1
+        Show Joint Torques: false
+        Show Manipulability: false
+        Show Manipulability Index: false
+        Show Weight Limit: false
+        TextHeight: 0.07999999821186066
+      Planning Request:
+        Colliding Link Color: 255; 0; 0
+        Goal State Alpha: 1
+        Goal State Color: 250; 128; 0
+        Interactive Marker Size: 0
+        Joint Violation Color: 255; 0; 255
+        Planning Group: fer_arm
+        Query Goal State: true
+        Query Start State: false
+        Show Workspace: false
+        Start State Alpha: 1
+        Start State Color: 0; 255; 0
+      Planning Scene Topic: monitored_planning_scene
+      Robot Description: robot_description
+      Scene Geometry:
+        Scene Alpha: 1
+        Scene Color: 50; 230; 50
+        Scene Display Time: 0.009999999776482582
+        Show Scene Geometry: true
+        Voxel Coloring: Z-Axis
+        Voxel Rendering: Occupied Voxels
+      Scene Robot:
+        Attached Body Color: 150; 50; 150
+        Links:
+          All Links Enabled: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Link Tree Style: Links in Alphabetic Order
+          base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          fer_link0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fer_link8:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          hand_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          idf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ima_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          imf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ipf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          mdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          mma_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          mmf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          mpf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          pdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          pma_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          pmf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ppf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rma_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rmf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rpf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tca_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tcf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tma_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tmf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+        Robot Alpha: 0.5
+        Show Robot Collision: false
+        Show Robot Visual: true
+      Value: true
+      Velocity_Scaling_Factor: 0.2
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        base:
+          Value: true
+        fer_link0:
+          Value: true
+        fer_link1:
+          Value: true
+        fer_link2:
+          Value: true
+        fer_link3:
+          Value: true
+        fer_link4:
+          Value: true
+        fer_link5:
+          Value: true
+        fer_link6:
+          Value: true
+        fer_link7:
+          Value: true
+        fer_link8:
+          Value: true
+        hand_base_link:
+          Value: true
+        idf_link:
+          Value: true
+        ima_link:
+          Value: true
+        imf_link:
+          Value: true
+        ipf_link:
+          Value: true
+        mdf_link:
+          Value: true
+        mma_link:
+          Value: true
+        mmf_link:
+          Value: true
+        mpf_link:
+          Value: true
+        pdf_link:
+          Value: true
+        pma_link:
+          Value: true
+        pmf_link:
+          Value: true
+        ppf_link:
+          Value: true
+        rdf_link:
+          Value: true
+        rma_link:
+          Value: true
+        rmf_link:
+          Value: true
+        rpf_link:
+          Value: true
+        tca_link:
+          Value: true
+        tcf_link:
+          Value: true
+        tdf_link:
+          Value: true
+        tma_link:
+          Value: true
+        tmf_link:
+          Value: true
+      Marker Scale: 0.20000000298023224
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: false
+      Tree:
+        base:
+          fer_link0:
+            fer_link1:
+              fer_link2:
+                fer_link3:
+                  fer_link4:
+                    fer_link5:
+                      fer_link6:
+                        fer_link7:
+                          fer_link8:
+                            hand_base_link:
+                              ima_link:
+                                imf_link:
+                                  ipf_link:
+                                    idf_link:
+                                      {}
+                              mma_link:
+                                mmf_link:
+                                  mpf_link:
+                                    mdf_link:
+                                      {}
+                              pma_link:
+                                pmf_link:
+                                  ppf_link:
+                                    pdf_link:
+                                      {}
+                              rma_link:
+                                rmf_link:
+                                  rpf_link:
+                                    rdf_link:
+                                      {}
+                              tcf_link:
+                                tca_link:
+                                  tma_link:
+                                    tmf_link:
+                                      tdf_link:
+                                        {}
+      Update Interval: 0
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: base
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 2.011037588119507
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0.037351567298173904
+        Y: 0.17680132389068604
+        Z: 0.4143766462802887
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.4800000786781311
+      Target Frame: base
+      Value: Orbit (rviz_default_plugins)
+      Yaw: 0.7269970178604126
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1011
+  Help:
+    collapsed: false
+  Hide Left Dock: false
+  Hide Right Dock: false
+  MotionPlanning:
+    collapsed: false
+  MotionPlanning - Trajectory Slider:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd00000001000000000000025900000395fc0200000005fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004400fffffffb000000100044006900730070006c006100790073010000003f000001aa000000cc00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006701000001ef000001e50000019600fffffffb0000000800480065006c0070000000029a0000006e0000006f00fffffffb0000000a00560069006500770073000000031f000000b5000000a900ffffff000004df0000039500000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Views:
+    collapsed: false
+  Width: 1854
+  X: 66
+  Y: 32

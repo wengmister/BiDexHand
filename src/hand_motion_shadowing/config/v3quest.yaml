@@ -1,0 +1,41 @@
+# hand_shadowing_params.yaml
+hand_shadowing_node:
+  ros__parameters:
+    # General parameters
+    scale_factor: 2.0
+    smoothing_factor: 0.3
+    
+    # Scaling parameters by joint index
+    scaling:
+      thumb_cmc_abd: 3.5      # index 0
+      thumb_mcp_abd: 4.5        # index 5
+      finger_mcp_abd: -2.5         # indices 1-4
+      finger_mcp_flex: 1.4       # indices 6-9
+      thumb_mcp_flex: -1.5              # index 10
+      finger_pip: 1.5            # indices 11-14 
+      thumb_cmc_flex: -2.5        # index 15
+    
+    # Compensation parameters by joint index
+    compensation:
+      thumb_cmc_abd: 35.0      # index 0
+      thumb_mcp_abd: -40.0        # index 5
+      index_mcp_abd: -2.0          # index 1
+      middle_mcp_abd: -8.0        # index 2
+      ring_mcp_abd: -10.0          # index 3
+      pinky_mcp_abd: 20.0        # index 4
+      finger_mcp_flex: 0.0        # indices 6-9
+      thumb_mcp_flex: 0.0             # index 10
+      finger_pip: -50.0            # indices 11-14
+      thumb_cmc_flex: -10.0        # index 15
+    
+    # Clamping parameters by joint index (min, max)
+    clamping:
+      thumb_cmc_abd: [-25.0, 60.0]      # index 0
+      thumb_mcp_abd: [-70.0, 40.0]      # index 5
+      finger_mcp_abd: [-25.0, 25.0]     # indices 1-3
+      pinky_mcp_abd: [-40.0, 25.0]        # index 4
+      finger_mcp_flex: [-90.0, 90.0]    # indices 6-9
+      thumb_mcp_flex: [-50.0, 90.0]          # index 10
+      finger_pip: [-50.0, 90.0]         # indices 11-14
+      thumb_cmc_flex: [-90.0, 10.0]     # index 15
+      default: [-90.0, 90.0]            # default

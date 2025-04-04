@@ -1,0 +1,4 @@
+int32[] channels
+int32[] positions
+---
+bool success

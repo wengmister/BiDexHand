@@ -1,0 +1,29 @@
+# MoveIt uses this configuration for controller management
+
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - fer_arm_controller
+    - fer_gripper
+
+  fer_arm_controller:
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - fer_joint1
+      - fer_joint2
+      - fer_joint3
+      - fer_joint4
+      - fer_joint5
+      - fer_joint6
+      - fer_joint7
+
+  fer_gripper:
+      action_ns: gripper_action
+      type: GripperCommand
+      default: true
+      joints:
+        - fer_finger_joint1
+        - fer_finger_joint2

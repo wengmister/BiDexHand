@@ -1,0 +1,44 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 1000  # Hz
+
+    fer_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    franka_robot_state_broadcaster:
+      type: franka_robot_state_broadcaster/FrankaRobotStateBroadcaster
+
+franka_robot_state_broadcaster:
+  ros__parameters:
+    arm_id: fer
+
+fer_arm_controller:
+  ros__parameters:
+    command_interfaces:
+      - effort
+    state_interfaces:
+      - position
+      - velocity
+    joints:
+      - fer_joint1
+      - fer_joint2
+      - fer_joint3
+      - fer_joint4
+      - fer_joint5
+      - fer_joint6
+      - fer_joint7
+    gains:
+      fer_joint1: { p: 600., d: 30., i: 0., i_clamp: 1. }
+      fer_joint2: { p: 600., d: 30., i: 0., i_clamp: 1. }
+      fer_joint3: { p: 600., d: 30., i: 0., i_clamp: 1. }
+      fer_joint4: { p: 600., d: 30., i: 0., i_clamp: 1. }
+      fer_joint5: { p: 250., d: 10., i: 0., i_clamp: 1. }
+      fer_joint6: { p: 150., d: 10., i: 0., i_clamp: 1. }
+      fer_joint7: { p: 50., d: 5., i: 0., i_clamp: 1. }
+
+joint_state_broadcaster:
+    ros__parameters:
+        use_local_topics: true
