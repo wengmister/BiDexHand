@@ -7,7 +7,7 @@ Open source release of biomimetic dexterous robotic hand, a 10-week M.S.Robotics
 
 # Overview
 
-This is the open source release of the MSR Dexterous Hand V3, a robotic hand featuring 16 degrees of freedom. It utilizes a cable-and-pulley system, with 15 servos arranged in `N configuration` to drive its 15 joints with tendon.
+This is the open source release of the MSR Dexterous Hand V2, a robotic hand featuring 16 degrees of freedom. It utilizes a cable-and-pulley system, with 15 servos arranged in `N configuration` to drive its 15 joints with tendon.
 
 Each finger provides three degrees of freedom: metacarpal (MCP) adduction/abduction, MCP flexion/extension, and proximal interphalangeal (PIP) flexion/extension. A custom four-bar linkage at the distal end of each phalanx converts the PIP motion into a coupled movement at the distal interphalangeal (DIP) joint. The thumb is designed with four degrees of freedom, including carpometacarpal (CMC) adduction/abduction and flexion/extension, as well as MCP adduction/abduction and flexion/extension.
 
@@ -49,7 +49,7 @@ Fasteners:
 
 Build instruction currently under construction, will be released soon.
 
-For `V3`, flash and deploy `esp32_multi_servo_control/feather` through `Arduino IDE`.
+For `V2`, flash and deploy `esp32_multi_servo_with_linear(_feather)` through `Arduino IDE`.
 
 # Environment Setup
 
