@@ -15,48 +15,20 @@ The hand is controlled through provided `ROS2` packages found in `/src`. It prov
 
 # Hardware Setup
 
-STEP file for the cad asset can be found under `/cad_asset`. Individual 3D printables will be released soon.
+STEP file for the cad asset can be found under `/cad_asset/_stp`, and individual STL file under `/cad_asset/_stl`.
 
-Other than the 3D printing files, you'll also need:
+See [BOM.md](/BOM.md) for more details.
 
-- [MG90S 9G Servo Motor](https://www.amazon.com/Miuzei-Geared-Helicopter-Arduino-Project/dp/B0BWJ2CK9D)
-- [GH-S37D 3.7G Servo Motor](https://www.amazon.com/SpiderWire-DuraBraid-Braid-Fishing-Line/dp/B0C69TLSHK)
-- [PCA9685 16 Channel I2C Servo Driver](https://www.amazon.com/Teyleten-Robot-PCA9685-Compatible-Raspberry/dp/B0CNVBWX2M)
-- ESP32 dev board ([Adafruit ESP32 Feather](https://www.adafruit.com/product/3405) used in my builds) 
-- 5V 3A Power Supply    
+Build instruction currently under construction, I'm planning on releasing it soon.
 
-- [DuraBraid fishing wire](https://www.amazon.com/SpiderWire-DuraBraid-Braid-Fishing-Line/dp/B0C69TLSHK)
-- [Compression spring](https://www.mcmaster.com/2006N111/)
-
-Fasteners:
-- Shoulder Screws
-    - 3 mm Shoulder Diameter, 6 mm Shoulder Length, M2 x 0.4 mm Thread
-    - 3 mm Shoulder Diameter, 8 mm Shoulder Length, M2 x 0.4 mm Thread
-    - 3 mm Shoulder Diameter, 10 mm Shoulder Length, M2 x 0.4 mm Thread
-    - 3 mm Shoulder Diameter, 12 mm Shoulder Length, M2 x 0.4 mm Thread
-    - 3 mm Shoulder Diameter, 20 mm Shoulder Length, M2 x 0.4 mm Thread
-- SHCS
-    - M1.6x0.35 mm Thread, 4mm
-    - M2x0.4 mm Thread, 8mm
-    - M2x0.4 mm Thread, 12mm
-    - M3x0.5 mm Thread, 16mm
-    - M4x0.7 mm Thread, 25mm
-- Flat head screws
-    - M1.6x0.35, 2mm
-- Shims
-    - 1.7mm ID x 4mm OD
-
-
-Build instruction currently under construction, will be released soon.
-
-For `V3`, flash and deploy `esp32_multi_servo_control/feather` through `Arduino IDE`.
+For `V3`, flash and deploy `/scripts/esp32_multi_servo_control (or _feather)` through `Arduino IDE`.
 
 # Environment Setup
 
 This project currently runs on `ROS2-JAZZY`. To build locally, run:
 
-    git clone https://github.com/wengmister/Dex_Hand_MSR.git
-    cd Dex_Hand_MSR
+    git clone https://github.com/wengmister/BiDexHand.git
+    cd BiDexHand
     rosdep install --from-paths src -y --ignore-src
 
 Finally, 
@@ -78,7 +50,7 @@ For direct servo control:
 
 Change usb port based on your device setting.
 
-For Franka MoveIT! config demo:
+For Franka `MoveIT!` config demo:
 
     ros2 launch combined_fer_moveit_config demo.launch.py
 
