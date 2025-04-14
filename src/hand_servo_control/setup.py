@@ -24,6 +24,7 @@ setup(
         'console_scripts': [
             'multi_servo_control = hand_servo_control.servo_control_node:main',
             'demo_motion = hand_servo_control.demo_motion_node:main',
+            'servo_control_gui = hand_servo_control.servo_control_gui:main',
         ],
     },
 )

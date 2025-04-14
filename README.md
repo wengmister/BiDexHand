@@ -3,7 +3,7 @@ Author: [Zhengyang Kris Weng](https://wengmister.github.io/)
 
 Open source release of biomimetic dexterous robotic hand, a 10-week M.S.Robotics 2025 Winter project. This guide will help you build your own hand and get your started on the setup.
 
-<img src="images/preview.jpg" alt="BiDexHand" width="500px">
+[![Biomimetic Dexterous Hand Demonstration](https://img.youtube.com/vi/X8zVKlZNorc/0.jpg)](https://youtu.be/X8zVKlZNorc?si=lmVslFvECZyih0Kd)
 
 # Overview
 

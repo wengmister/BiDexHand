@@ -1,10 +1,16 @@
 <launch>
   <arg name="usb" default="/dev/ttyACM0"/>
-  <arg name="input_mode" default="cli"/>
+  <arg name="input_mode" default="streaming"/>
   <node pkg="hand_servo_control" exec="multi_servo_control" name="servo_control_node" output="screen">
     <param name="usb_port" value="$(var usb)" />
     <param name="mode" value="$(var input_mode)" />
   </node>
   <!-- joint state forwarding for visualization -->
   <node pkg="hand_rviz" exec="joint_state_forwarding" name="joint_state_forwarding" output="screen"/>
+
+  <node pkg="hand_servo_control" exec="multi_servo_control" name="servo_control_node" output="screen" if="$(eval '\'$(var input_mode)\'==\'streaming\'')">
+    <param name="usb_port" value="$(var usb)" />
+    <param name="mode" value="$(var input_mode)" />
+  </node>
+  <node pkg="hand_servo_control" exec="servo_control_gui" name="servo_control_gui_node" output="screen" if="$(eval '\'$(var input_mode)\'==\'streaming\'')"/>
 </launch>

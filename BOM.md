@@ -12,6 +12,8 @@
 | As needed | DuraBraid fishing wire             | 40lb                                       | [Amazon](https://www.amazon.com/SpiderWire-DuraBraid-Braid-Fishing-Line/dp/B0C69TLSHK)                                                 |
 | 10        | Compression spring                 |                                              | [McMaster](https://www.mcmaster.com/2006N111/)                                                                                          |
 | As needed | 2mm zipties                        |                                              | –                                                                                                                                     |
+| As needed | 3mm OD PTFE Tube                   |                                              | [Amazon](https://www.amazon.com/uxcell-Tubing-Printer-RepRap-16-4ft/dp/B07F64KQR1)                                                                                                                           |
+
 
 ---
 
