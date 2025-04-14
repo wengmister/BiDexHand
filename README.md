@@ -36,6 +36,9 @@ Finally,
     colcon build
     . install/setup.bash
 
+# VR Setup
+If you plan to use Meta Quest for the motion shadowing demo, you can follow the build and deployment steps in [this repo](https://github.com/NU-MECH-ENG-495/vr-hand-tracking).
+
 
 # Quickstart
 ### Hand Control
