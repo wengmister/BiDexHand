@@ -1,13 +1,14 @@
-# Biomimetic Dexterous Hand
-Author: [Zhengyang Kris Weng](https://wengmister.github.io/)
+# BiDexHand: Open-Source 16-DoF Biomimetic Dexterous Hand
+Author: [Zhengyang Kris Weng](https://wengmister.github.io/)   
+Preprint: [arXiv](https://arxiv.org/abs/2504.14712) 
 
-Open source release of biomimetic dexterous robotic hand, a 10-week M.S.Robotics 2025 Winter project. This guide will help you build your own hand and get your started on the setup.
+Open source release of biomimetic dexterous robotic hand, a 10-week individual project. This guide will help you build your own hand and get your started on the setup.
 
 [![Biomimetic Dexterous Hand Demonstration](https://img.youtube.com/vi/X8zVKlZNorc/0.jpg)](https://youtu.be/X8zVKlZNorc?si=lmVslFvECZyih0Kd)
 
 # Overview
 
-This is the open source release of the MSR Dexterous Hand V3, a robotic hand featuring 16 degrees of freedom. It utilizes a cable-and-pulley system, with 15 servos arranged in `N configuration` to drive its 15 joints with tendon.
+This is the open source release of the BiDexHand V3, a robotic hand featuring 16 degrees of freedom. It utilizes a cable-and-pulley system, with 15 servos arranged in `N configuration` to drive its 15 joints with tendon.
 
 Each finger provides three degrees of freedom: metacarpal (MCP) adduction/abduction, MCP flexion/extension, and proximal interphalangeal (PIP) flexion/extension. A custom four-bar linkage at the distal end of each phalanx converts the PIP motion into a coupled movement at the distal interphalangeal (DIP) joint. The thumb is designed with four degrees of freedom, including carpometacarpal (CMC) adduction/abduction and flexion/extension, as well as MCP adduction/abduction and flexion/extension.
 
