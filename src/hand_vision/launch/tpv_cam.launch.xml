@@ -1,0 +1,8 @@
+<launch>
+    <include file="$(find-pkg-share realsense2_camera)/launch/rs_launch.py">
+        <arg name="camera_name" value="tpv"/>
+        <arg name="serial_no" value="'938422073508'"/>
+        <arg name="pointcloud.enable" value="true"/> 
+        <arg name="align_depth.enable" value="true"/>
+    </include> 
+</launch>

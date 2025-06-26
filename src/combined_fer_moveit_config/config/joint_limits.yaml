@@ -50,8 +50,8 @@ joint_limits:
     has_acceleration_limits: true
     max_acceleration: 20.0
   fer_joint7:
-    max_position: 2.8973
-    min_position: -2.8973
+    max_position: 1.750
+    min_position: -0.350
     has_velocity_limits: true
     max_velocity: 2.6100
     has_acceleration_limits: true

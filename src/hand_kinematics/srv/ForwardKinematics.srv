@@ -1,0 +1,9 @@
+# Forward Kinematics Service
+# Compute tip position from joint angles for a specified finger chain
+
+string chain_name          # finger chain name (thumb, index, middle, ring, pinky)
+float64[] joint_angles_deg # joint angles in degrees
+---
+bool success              # whether computation succeeded
+geometry_msgs/Point tip_position  # computed tip position
+string message            # status message
