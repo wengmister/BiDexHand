@@ -8,7 +8,7 @@ Open source release of biomimetic dexterous robotic hand, a 10-week individual p
 
 # Overview
 
-This is the open source release of the BiDexHand V3, a robotic hand featuring 16 degrees of freedom. It utilizes a cable-and-pulley system, with 15 servos arranged in `N configuration` to drive its 15 joints with tendon.
+This is the open source release of the BiDexHand V4, a robotic hand featuring 16 degrees of freedom. It utilizes a cable-and-pulley system, with 15 servos arranged in `N configuration` to drive its 15 joints with tendon.
 
 Each finger provides three degrees of freedom: metacarpal (MCP) adduction/abduction, MCP flexion/extension, and proximal interphalangeal (PIP) flexion/extension. A custom four-bar linkage at the distal end of each phalanx converts the PIP motion into a coupled movement at the distal interphalangeal (DIP) joint. The thumb is designed with four degrees of freedom, including carpometacarpal (CMC) adduction/abduction and flexion/extension, as well as MCP adduction/abduction and flexion/extension.
 
@@ -22,7 +22,8 @@ See [BOM.md](/BOM.md) for more details.
 
 Build instruction currently under construction, I'm planning on releasing it soon.
 
-For `V3`, flash and deploy `/scripts/esp32_multi_servo_control (or _feather)` through `Arduino IDE`.
+For `V4`, build, flash and deploy `/scripts/Servo2040/servo2040_controller` to controller.
+- You'll need `pico-sdk` and `pimoroni-pico` modules to build this project.
 
 # Environment Setup
 
@@ -80,6 +81,9 @@ On your laptop, run:
 
 ### Franka FER Integrated    
 <img src="images/franka_integration.gif" alt="Franka" width="500px">
+
+### Calibration
+<img src="images/calibration.gif" alt="Calibration" width="500px">
 
 # License
 MIT
