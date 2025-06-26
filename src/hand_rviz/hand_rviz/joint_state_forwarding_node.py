@@ -8,37 +8,16 @@ import math
 class JointStateForwardingNode(Node):
     def __init__(self):
         super().__init__('joint_state_forwarding_node')
-
-        # Declare parameters
-        self.declare_parameter('is_calibrated', True)
-        self.declare_parameter('calibrating_offset', False)
-
-        # Load calibration data
-        self.is_calibrated = self.get_parameter('is_calibrated').value
-        self.calibrating_offset = self.get_parameter('calibrating_offset').value
-        
-        if self.calibrating_offset:
-            self.get_logger().info("Calibrating offset mode enabled - no joint states will be published")
         
         # Publisher for the fused joint_states message
         self.joint_state_pub = self.create_publisher(JointState, 'hand/joint_states', 10)
         
         # Subscription to the hand servo input topic
-        if self.is_calibrated:
-            self.get_logger().info("Using calibrated input")
-            self.hand_sub = self.create_subscription(
-                Float32MultiArray,
-                '/calibrated_servo_input',
-                self.hand_callback,
-                10)
-        else:
-            self.get_logger().info("Using raw input")
-            self.get_logger().warn("Raw input is not calibrated. Please calibrate the servos.")
-            self.hand_sub = self.create_subscription(
-                Float32MultiArray,
-                '/hand_servo_input',
-                self.hand_callback,
-                10)
+        self.hand_sub = self.create_subscription(
+            Float32MultiArray,
+            '/hand_servo_input',
+            self.hand_callback,
+            10)
 
         self.hand_joint_names = [
             "tcf_joint",
@@ -78,11 +57,11 @@ class JointStateForwardingNode(Node):
 
         See derivation at linkage_analysis/antiparallelgram_model.pdf
         """
-        neutral_pip = 1.995 #rad
-        # neutral_pip = 114.295 #deg
-        neutral_dip =  0.424 #rad
-        # neutral_dip = 24.295 #deg
-        return 2 * math.atan(1.0 / 3.0 / math.tan((neutral_pip - pip_angle)/2)) - neutral_dip
+        neutral_pip = 1.968 #rad
+        # neutral_pip = 112.78 #deg
+        neutral_dip = 0.3978 #rad
+        # neutral_dip = 22.78 #deg
+        return 2 * math.atan(0.87 / 2.87 / math.tan((neutral_pip - pip_angle)/2)) - neutral_dip
 
 
     def hand_callback(self, msg: Float32MultiArray):
@@ -124,28 +103,12 @@ class JointStateForwardingNode(Node):
             mapped[19] = msg_in_radians[14]  # ppf_joint = servo.14
 
 
-            if not self.is_calibrated:
-                # SIMULATION PIP NEEDS TO BE UNCOMPENSATED:
-                mapped[7] = mapped[7] - mapped[6] * 0.7
-                mapped[11] = mapped[11] - mapped[10] * 0.7
-                mapped[15] = mapped[15] - mapped[14] * 0.7
-                mapped[19] = mapped[19] - mapped[18] * 0.7 
-                mapped[3] = mapped[3] + mapped[2] *0.7
-
-                # all pip flexions gets 0.7x multiplier for raw input
-                mapped[3] = mapped[3]*0.7
-                mapped[7] = mapped[7]*0.7
-                mapped[11] = mapped[11]*0.7
-                mapped[15] = mapped[15]*0.7
-                mapped[19] = mapped[19]*0.7
-                mapped[1] = mapped[1]*0.5
-            else:
-                # Simply uncompensate PIP from MCP-F
-                mapped[3] = mapped[3] + mapped[2] # TODO: Evaluate the sign on V4
-                mapped[7] = mapped[7] - mapped[6]
-                mapped[11] = mapped[11] - mapped[10]
-                mapped[15] = mapped[15] - mapped[14]
-                mapped[19] = mapped[19] - mapped[18]
+            # SIMULATION PIP NEEDS TO BE UNCOMPENSATED:
+            mapped[7] = mapped[7] - mapped[6] * 0.7
+            mapped[11] = mapped[11] - mapped[10] * 0.7
+            mapped[15] = mapped[15] - mapped[14] * 0.7
+            mapped[19] = mapped[19] - mapped[18] * 0.7 
+            mapped[3] = mapped[3] + mapped[2] *0.7 + 1
 
             mapped[4]  = self.dip_from_pip(mapped[3])   # tdf_joint = dip_from_pip(servo.10)
             mapped[8]  = self.dip_from_pip(mapped[7])   # idf_joint = dip_from_pip(servo.11)
@@ -153,6 +116,14 @@ class JointStateForwardingNode(Node):
             mapped[16] = self.dip_from_pip(mapped[15])   # rdf_joint = dip_from_pip(servo.13)
             mapped[20] = self.dip_from_pip(mapped[19])   # pdf_joint = dip_from_pip(servo.14)
 
+            # temporary pip flexion multiplier: pending servo mapping calibration
+            # all pip flexions gets 0.7x multiplier
+            mapped[3] = mapped[3]*0.7
+            mapped[7] = mapped[7]*0.7
+            mapped[11] = mapped[11]*0.7
+            mapped[15] = mapped[15]*0.7
+            mapped[19] = mapped[19]*0.7
+            mapped[1] = mapped[1]*0.5
 
         except IndexError:
             self.get_logger().error("Input data does not contain the expected indices")
@@ -167,12 +138,7 @@ class JointStateForwardingNode(Node):
     def publish_joint_state(self):
         """
         Publish a JointState message that fuses the arm and hand joint data.
-        If calibrating_offset is True, don't publish anything.
         """
-        # Skip publishing if in calibrating_offset mode
-        if self.calibrating_offset:
-            return
-            
         joint_state = JointState()
         joint_state.header.stamp = self.get_clock().now().to_msg()
         joint_state.header.frame_id = ""

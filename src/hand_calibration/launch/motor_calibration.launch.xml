@@ -1,9 +1,0 @@
-<launch>
-    <!-- apriltag detection node -->
-    <node pkg="hand_calibration" exec="data_collector" output="screen"/>
-
-     <!-- motor calibration node -->
-    <node pkg="hand_calibration" exec="motor_calibrator" output="screen">
-        <param from="$(find-pkg-share hand_calibration)/config/calibration_params.yaml"/>
-    </node>
-</launch>

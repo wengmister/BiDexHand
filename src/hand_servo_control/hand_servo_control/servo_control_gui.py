@@ -67,8 +67,8 @@ class ServoControlGUI(Node):
             
             slider = ttk.Scale(
                 frame, 
-                from_=-140.0, 
-                to=140.0,
+                from_=-90.0, 
+                to=90.0,
                 variable=value_var,
                 orient=tk.HORIZONTAL,
                 command=lambda v, i=i: self.update_value(i)

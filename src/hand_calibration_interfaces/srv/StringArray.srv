@@ -1,7 +1,0 @@
-# Request: array of strings (tag frames)
-string[] tags
-
----
-# Response
-bool success
-string message

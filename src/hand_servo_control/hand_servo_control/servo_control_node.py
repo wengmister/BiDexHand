@@ -20,7 +20,7 @@ class ServoControlNode(Node):
         # Attempt to open the serial connection using the provided USB port
         try:
             self.serial = serial.Serial(usb_port, 115200, timeout=1)
-            self.get_logger().info(f'\033[94mConnected to USB port: {usb_port}\033[0m')
+            self.get_logger().info(f'Connected to USB port: {usb_port}')
         except Exception as e:
             self.get_logger().error(f'Failed to connect to USB port {usb_port}: {e}')
             rclpy.shutdown()
@@ -34,7 +34,7 @@ class ServoControlNode(Node):
                 'set_servo_positions',
                 self.handle_set_servo_positions
             )
-            self.get_logger().info('\033[94mCLI mode: service /set_servo_positions active.\033[0m')
+            self.get_logger().info('CLI mode: service /set_servo_positions active.')
         
         elif self.mode == 'streaming':
             # Create subscription to /hand_servo_input for streaming mode
@@ -44,9 +44,9 @@ class ServoControlNode(Node):
                 self.servo_input_callback,
                 10
             )
-            self.get_logger().info('\033[94mStreaming mode: subscribed to /hand_servo_input.\033[0m')
+            self.get_logger().info('Streaming mode: subscribed to /hand_servo_input.')
         
-        self.get_logger().info('\033[92mServo control node initialized.\033[0m')
+        self.get_logger().info('Servo control node initialized.')
 
     def handle_set_servo_positions(self, request, response):
         """Service callback for setting servo positions in CLI mode."""
@@ -57,7 +57,7 @@ class ServoControlNode(Node):
         
         commands = []
         for ch, pos in zip(request.channels, request.positions):
-            commands.append(f"{ch},{pos:.3f}")
+            commands.append(f"{ch},{pos}")
         command_string = ';'.join(commands) + '\n'
         
         try:
@@ -82,12 +82,12 @@ class ServoControlNode(Node):
         # Channel from 0-15
         commands = []
         for i, pos in enumerate(msg.data):
-            commands.append(f"{i},{pos:.3f}")
+            commands.append(f"{i},{pos}")
         command_string = ';'.join(commands) + '\n'
         
         try:
             self.serial.write(command_string.encode())
-            self.get_logger().debug(f'Sent command: {command_string.strip()}')
+            # self.get_logger().info(f'Sent command: {command_string.strip()}')
         except Exception as e:
             self.get_logger().error(f'Failed to send command: {e}')
 
