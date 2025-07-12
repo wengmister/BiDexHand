@@ -17,9 +17,9 @@ The hand is controlled through provided `ROS2` packages found in `/src`. It prov
 **V4 Updates in a nutshell:**
 - Updated single shear phalanx
 - Added servo calibration modules
-- Now using FeeTech servos (see [BOM](/BOM.md) update)
+- Now using unified FeeTech servos (see [BOM](/BOM.md) update)
 - Now using servo2040 for PWM builds
-- Franka whole arm teleoperation (see [this repo](https://github.com/wengmister/franka-vr-teleop) for more details)
+- Franka whole arm VR teleoperation (see [this repo](https://github.com/wengmister/franka-vr-teleop) for more details)
 
 # Hardware Setup
 
@@ -93,7 +93,7 @@ See [this repo](https://github.com/wengmister/franka-vr-teleop) on details about
 ### Franka FER Integration    
 <img src="images/franka_integration.gif" alt="Franka" width="500px">
 
-### Franka FER Teleoperation    
+### Franka VR Teleoperation    
 <img src="images/franka_teleop.gif" alt="Franka Teleop" width="500px">
 
 # License
