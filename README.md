@@ -8,11 +8,18 @@ Open source release of biomimetic dexterous robotic hand, a 10-week individual p
 
 # Overview
 
-This is the open source release of the BiDexHand V4, a robotic hand featuring 16 degrees of freedom. It utilizes a cable-and-pulley system, with 15 servos arranged in `N configuration` to drive its 15 joints with tendon.
+This is the open source release of the BiDexHand V4, a robotic hand featuring 16 degrees of freedom. It utilizes a cable-and-pulley system, with 15 servos arranged in `N configuration` to drive its 15 joints with tenden, and a 4-bar linkage driven 16th joint.
 
 Each finger provides three degrees of freedom: metacarpal (MCP) adduction/abduction, MCP flexion/extension, and proximal interphalangeal (PIP) flexion/extension. A custom four-bar linkage at the distal end of each phalanx converts the PIP motion into a coupled movement at the distal interphalangeal (DIP) joint. The thumb is designed with four degrees of freedom, including carpometacarpal (CMC) adduction/abduction and flexion/extension, as well as MCP adduction/abduction and flexion/extension.
 
 The hand is controlled through provided `ROS2` packages found in `/src`. It provides several modes to interface with the robot - `motion shadowing` and `servo input` streaming through `ROS2` topic, or direct `servo input` control through CLI. See packages in `/src` for more details.
+
+**V4 Updates in a nutshell:**
+- Updated single shear phalanx
+- Added servo calibration modules
+- Now using FeeTech servos (see [BOM](/BOM.md) update)
+- Now using servo2040 for PWM builds
+- Franka whole arm teleoperation (see [this repo](https://github.com/wengmister/franka-vr-teleop) for more details)
 
 # Hardware Setup
 
@@ -22,8 +29,8 @@ See [BOM.md](/BOM.md) for more details.
 
 Build instruction currently under construction, I'm planning on releasing it soon.
 
-For `V4`, build, flash and deploy `/scripts/Servo2040/servo2040_controller` to controller.
-- You'll need `pico-sdk` and `pimoroni-pico` modules to build this project.
+For `V4`, build, flash and deploy `/scripts/Servo2040/servo2040_controller` to controller for the PWM version. Alternatively, use script from `V3` fork for SCS bus builds.
+- You'll need `pico-sdk` and `pimoroni-pico` modules to build the PWM project.
 
 # Environment Setup
 
@@ -73,17 +80,21 @@ On your laptop, run:
 
     ros2 launch combined_fer_moveit_config moveit_rviz.launch.py robot_ip:=[YOUR_ROBOT_IP]
 
+See [this repo](https://github.com/wengmister/franka-vr-teleop) on details about whole arm teleoperation!
 
 # Demo
 
 ### Mixed Reality Motion Shadowing      
 <img src="images/vr_control_exp.gif" alt="MR" width="500px">
 
-### Franka FER Integrated    
-<img src="images/franka_integration.gif" alt="Franka" width="500px">
-
 ### Calibration
 <img src="images/calibration.gif" alt="Calibration" width="500px">
+
+### Franka FER Integration    
+<img src="images/franka_integration.gif" alt="Franka" width="500px">
+
+### Franka FER Teleoperation    
+<img src="images/franka_teleop.gif" alt="Franka Teleop" width="500px">
 
 # License
 MIT
