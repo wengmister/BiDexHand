@@ -68,7 +68,10 @@ Small Feetech servo motor availability in the U.S. could be tight due to Tariffs
 
 ## Assembly
 
-Refer to CAD under `cad_asset` or OnShape repo for assembly details.
+![phalanx++ 2](https://github.com/user-attachments/assets/f9e4832a-4d65-4f57-9f52-f3ca760dad32)
+
+
+Refer to CAD under `cad_asset` or [OnShape repo](https://cad.onshape.com/documents/01cd86c3e9db901b13d9f00a/w/85362aa967854376c1ce3eaf/e/cdd4272996feef8877266f8c?renderMode=0&uiState=68e7603e87a047038d7ce8cc) for assembly details.
 
 
 ---
