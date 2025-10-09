@@ -1,151 +1,75 @@
 # Bill of Material
 
-## Main Components
+| ITEM NO. | PART NUMBER | DESCRIPTION | QTY. | COMMENTS |
+|-----------|--------------|--------------|------|-----------|
+| 1 | palm_base | 3D printed part | 1 |  |
+| 2 | plx_base | 3D printed part | 4 |  |
+| 3 | plx_knuckle | 3D printed part | 4 |  |
+| 4 | plx_proximal | 3D printed part | 4 |  |
+| 5 | plx_support | 3D printed part | 5 |  |
+| 6 | plx_middle | 3D printed part | 5 |  |
+| 7 | plx_distal | 3D printed part | 4 |  |
+| 8 | plx_cover | 3D printed part | 4 |  |
+| 9 | pulley_scs0009 | 3D printed part | 15 |  |
+| 10 | thumb_base | 3D printed part | 1 |  |
+| 11 | thumb_arm | 3D printed part | 1 |  |
+| 12 | thumb_cmc | 3D printed part | 1 |  |
+| 13 | thumb_bridge | 3D printed part | 1 |  |
+| 14 | thumb_proximal | 3D printed part | 1 |  |
+| 15 | plx_distal | 3D printed part | 1 |  |
+| 16 | thumb_mcp | 3D printed part | 1 |  |
+| 17 | plx_cover | 3D printed part | 1 |  |
+| 18 | palm_coupler | 3D printed part | 1 |  |
+| 19 | sleeve_servo_rack | 3D printed part | 2 |  |
+| 20 | sleeve_servo_rack | 3D printed part | 2 |  |
+| 21 | sleeve_servo_carriage | 3D printed part | 10 |  |
+| 22 | sleeve_servo_rack | 3D printed part | 1 |  |
+| 23 | sleeve_servo_single_rack | 3D printed part | 4 |  |
+| 24 | sleeve_servo_single_rack | 3D printed part | 2 |  |
+| 25 | sleeve_servo_single_rack | 3D printed part | 1 |  |
+| 26 | sleeve_base | 3D printed part | 1 |  |
+| 27 | palm_guard | 3D printed part | 2 |  |
+| 28 | [90323A605](https://www.mcmaster.com/90323A605) | 18-8 Stainless Steel Low-Profile Precision Shoulder Screw | 5 | McMaster-Carr component |
+| 29 | [90323A608](https://www.mcmaster.com/90323A608) | 18-8 Stainless Steel Low-Profile Precision Shoulder Screw | 15 | McMaster-Carr component |
+| 30 | [97307A111](https://www.mcmaster.com/97307A111) | Slotted 18-8 Stainless Steel Precision Shoulder Screw | 10 | McMaster-Carr component |
+| 31 | [91290A021](https://www.mcmaster.com/91290A021) | Alloy Steel Socket Head Screw | 61 | McMaster-Carr component |
+| 32 | [27051112](https://www.mcmaster.com/27051112) | Light Duty Dry-Running Flanged Sleeve Bearing | 26 | McMaster-Carr component |
+| 33 | [98089A201](https://www.mcmaster.com/98089A201) | 18-8 Stainless Steel Round Shim | 16 | McMaster-Carr component |
+| 34 | [92010A778](https://www.mcmaster.com/92010A778) | Passivated 18-8 Stainless Steel Phillips Flat Head Screw | 28 | McMaster-Carr component |
+| 35 | [90323A604](https://www.mcmaster.com/90323A604) | 18-8 Stainless Steel Low-Profile Precision Shoulder Screw | 3 | McMaster-Carr component |
+| 36 | [90323A612](https://www.mcmaster.com/90323A612) | 18-8 Stainless Steel Low-Profile Precision Shoulder Screw | 1 | McMaster-Carr component |
+| 37 | [7119N113](https://www.mcmaster.com/7119N113) | Ultra-Low-Friction Oil-Embedded Sleeve Bearing | 1 | McMaster-Carr component |
+| 38 | [66584K12](https://www.mcmaster.com/66584K12) | Oil-Embedded 841 Bronze Sleeve Bearing | 2 | McMaster-Carr component |
+| 39 | [91290A015](https://www.mcmaster.com/91290A015) | Alloy Steel Socket Head Screw | 39 | McMaster-Carr component |
+| 40 | [91292A028](https://www.mcmaster.com/91292A028) | 18-8 Stainless Steel Socket Head Screw | 10 | McMaster-Carr component |
+| 41 | [2006N111](https://www.mcmaster.com/2006N111) | 302 Stainless Steel Corrosion-Resistant Compression Springs | 10 | McMaster-Carr component |
+| 42 | [94510A370](https://www.mcmaster.com/94510A370) | Brass Screw-to-Expand Inserts | 10 | McMaster-Carr component |
+| 43 | [91290A019](https://www.mcmaster.com/91290A019) | Alloy Steel Socket Head Screw | 14 | McMaster-Carr component |
+| 44 | [91502A109](https://www.mcmaster.com/91502A109) | Blue-Dyed Zinc-Plated Alloy Steel Socket Head Screw | 2 | McMaster-Carr component |
+| 45 | [91502A107](https://www.mcmaster.com/91502A107) | Blue-Dyed Zinc-Plated Alloy Steel Socket Head Screw | 4 | McMaster-Carr component |
+| 46 | FeeTech FT90M Servo* | 9G servo motor, PWM | 16 | [Alibaba](https://www.alibaba.com/product-detail/Feetech-FT90M-Metal-Gear-Digital-Core_1601043147164.html) |
+| 47 | Pimoroni Servo2040* | RP2040 Servo Shell | 1 | [Adafruit](https://www.adafruit.com/product/5437) |
+| 48 | 6V 5A Power Supply | Alternatively use adjustable bench power supply | 1 | – |
+| 49 | DuraBraid fishing wire | 40lb | As needed | [Amazon](https://www.amazon.com/SpiderWire-DuraBraid-Braid-Fishing-Line/dp/B0C69TLSHK) |
+| 50 | 2mm zipties | Cable management | As needed | – |
+| 51 | 3mm OD PTFE Tube |  | As needed | [Amazon](https://www.amazon.com/uxcell-Tubing-Printer-RepRap-16-4ft/dp/B07F64KQR1) |
+| 52 | D405_Solid | Intel Realsense wrist camera | 1 |  |
+| 53 | SCS009** | Feetech Servo Motor | 16 |  |
+| 54 | scs_board** | Signal distribute board | 5 |  |
+| 55 | FE-URT-1** | USB to TTL level shifter | 1 |  |
+| 56 | ESP32** | MCU | 1 |  |
 
-| Qty       | Component              | Description                               | Link                                                                                                       |
-| --------- | ---------------------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| 16        | FeeTech FT90M Servo    | 9G servo motor, PWM                       | [Alibaba](https://www.alibaba.com/product-detail/Feetech-FT90M-Metal-Gear-Digital-Core_1601043147164.html) |
-| 1         | Pimoroni Servo2040     | RP2040 Servo Shell                        | [Adafruit](https://www.adafruit.com/product/5437)                                                          |
-| 1         | 6V 5A Power Supply     | Alternatively use adjustable power supply | –                                                                                                          |
-| As needed | DuraBraid fishing wire | 40lb                                      | [Amazon](https://www.amazon.com/SpiderWire-DuraBraid-Braid-Fishing-Line/dp/B0C69TLSHK)                     |
-| 10        | Compression spring     |                                           | [McMaster](https://www.mcmaster.com/2006N111/)                                                             |
-| As needed | 2mm zipties            |                                           | –                                                                                                          |
-| As needed | 3mm OD PTFE Tube       |                                           | [Amazon](https://www.amazon.com/uxcell-Tubing-Printer-RepRap-16-4ft/dp/B07F64KQR1)                         |
+*PWM Control version  
+**SCS Bus version
 
-*PWM Version, use SCS0009 and ESP32 from `V3` for SCS Bus builds.    
-## Fasteners
-
-### Shoulder Screws
-
-| Qty | Specification                                                                                                   | Link                                            |
-| --- | --------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| 15  | 3 mm Shoulder Diameter, 10 mm Shoulder Length, M2 x 0.4 mm Thread, Metric Low-Profile Precision Shoulder Screws | [McMaster](https://www.mcmaster.com/90323A608/) |
-| 5   | 3 mm Shoulder Diameter, 6 mm Shoulder Length, M2 x 0.4 mm Thread, Metric Low-Profile Precision Shoulder Screws  | [McMaster](https://www.mcmaster.com/90323A605/) |
-| 3   | 3 mm Shoulder Diameter, 5 mm Shoulder Length, M2 x 0.4 mm Thread, Metric Low-Profile Precision Shoulder Screws  | [McMaster](https://www.mcmaster.com/90323A604/) |
-| 1   | 3 mm Shoulder Diameter, 6 mm Shoulder Length, M2 x 0.4 mm Thread, Metric Low-Profile Precision Shoulder Screws  | [McMaster](https://www.mcmaster.com/90323A612/) |
-| 10  | 2.5 mm Shoulder Diameter, 2 mm Shoulder Length, M2 x 0.4 mm Thread, Slotted Precision Shoulder Screws           | [McMaster](https://www.mcmaster.com/97307A111/) |
+Small Feetech servo motor availability in the U.S. could be tight due to Tariffs and demands. You may want to build specific versions depending on what servo you can get.
 
 
-### SHCS
-
-| Qty | Specification               |
-| --- | --------------------------- |
-| 60  | M1.6 x 0.35 mm Thread, 4mm  |
-| 40  | M2 x 0.4 mm Thread, 8mm     |
-| 20  | M2 x 0.4 mm Thread, 12mm    |
-| 10  | M2.5 x 0.45 mm Thread, 25mm |
-| 4   | M3 x 0.5 mm Thread, 16mm    |
-
-### Flat Head Screws
-
-| Qty | Specification    |
-| --- | ---------------- |
-| 28  | M1.6 x 0.35, 2mm |
-
-### Bearings
-
-| Qty | Specification                                                                                             | Link                                           |
-| --- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| 26  | Light Duty Dry-Running Flanged Sleeve Bearing Thermoplastic-Blend, for 3 mm Shaft Diameter, 5 mm Long     | [McMaster](https://www.mcmaster.com/2705T112/) |
-| 1   | Ultra-Low-Friction Oil-Embedded Sleeve Bearing Flanged, High-Strength, 3mm Shaft Diameter, 6mm Housing ID | [McMaster](https://www.mcmaster.com/7119N113/) |
-| 2   | Oil-Embedded 841 Bronze Sleeve Bearing for 3 mm Shaft Diameter and 5 mm Housing ID, 4 mm Long             | [McMaster](https://www.mcmaster.com/6658K412/) |
-
-### Shims
-
-| Qty       | Specification     |
-| --------- | ----------------- |
-| As needed | 1.7mm ID x 4mm OD |
-
-For adjusting offsets on phalanx/thumb support linkages to prevent binding.
-
-### Inserts
-
-| Qty | Specification        | Link                                            |
-| --- | -------------------- | ----------------------------------------------- |
-| 10  | M2.5 Screw to expand | [McMaster](https://www.mcmaster.com/94510A370/) |
-
-### Camera
-
-| Qty | Specification  |
-| --- | -------------- |
-| 1   | RealSense D405 |
-
-Wrist camera, optional
-
----
-
-## 3D Printed Components
-
-### PHALANX
-
-| Qty | Component     |
-| --- | ------------- |
-| 4   | plx, distal   |
-| 4   | plx, middle   |
-| 4   | plx, proximal |
-| 4   | plx, support  |
-| 4   | plx, cover    |
-| 4   | plx, knuckle  |
-| 4   | plx, base     |
-
----
-
-### THUMB
-
-| Qty | Component     |
-| --- | ------------- |
-| 1   | tmb, base     |
-| 1   | tmb, arm      |
-| 1   | tmb, cmc      |
-| 1   | tmb, mcp      |
-| 1   | tmb, bridge   |
-| 1   | tmb, proximal |
-| 1   | tmb, cover    |
-| 1   | plx, distal   |
-| 1   | plx, middle   |
-| 1   | plx, support  |
----
-
-### WRIST
-
-| Qty | Component     |
-| --- | ------------- |
-| 1   | palm, base    |
-| 1   | palm, guard   |
-| 1   | palm, coupler |
-
----
-
-### SERVO SLEEVE
-
-| Qty | Component                       |
-| --- | ------------------------------- |
-| 1   | sleeve, servo rack bottom       |
-| 2   | sleeve, servo rack cap          |
-| 1   | sleeve, servo rack recessed     |
-| 2   | sleeve, servo rack top          |
-| 1   | sleeve, servo single rack back  |
-| 1   | sleeve, servo single rack front |
-| 1   | sleeve, servo single rack top   |
-| 1   | sleeve, base                    |
-| 10  | sleeve, servo carriage          |
-
----
-
-### PULLEY
-
-| Qty | Component       |
-| --- | --------------- |
-| 15  | pulley, scs0009 |
-
----
-While FDM works, SLA tends to yield better results for phalanx and thumb components.
+3D Printed parts - While FDM works, SLA tends to yield better results for phalanx and thumb components.
 
 ## Assembly
-Exploded views
 
-
-Refer to CAD under `cad_asset` for assembly details.
+Refer to CAD under `cad_asset` or OnShape repo for assembly details.
 
 
 ---
