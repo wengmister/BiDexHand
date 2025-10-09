@@ -2,27 +2,15 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>hand_vision</name>
-  <version>0.1.0</version>
-  <description>Package for bidex hand camera and gesture recognition</description>
+  <version>0.0.0</version>
+  <description>Package for using mediapipe hand recognition</description>
   <maintainer email="wengmister@gmail.com">Zhengyang Kris Weng</maintainer>
   <license>MIT</license>
 
-  <!-- ROS package dependencies -->
   <depend>rclpy</depend>
-  <depend>std_msgs</depend>
   <depend>sensor_msgs</depend>
-  <depend>rcl_interfaces</depend>
-  <depend>geometry_msgs</depend>
-  <depend>std_srvs</depend>
-  <depend>tf2_ros</depend>
+  <depend>std_msgs</depend>
   <depend>cv_bridge</depend>
-
-  <!-- Non-ROS dependencies -->
-  <exec_depend>opencv-python</exec_depend>
-  <exec_depend>mediapipe</exec_depend>
-  <exec_depend>numpy</exec_depend>
-  <exec_depend>transforms3d</exec_depend>
-  <exec_depend>ultralytics</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

@@ -6,18 +6,8 @@ Panels:
       Expanded:
         - /MotionPlanning1
         - /TF1
-        - /TF1/Tree1/base1/fer_link01
-        - /TF1/Tree1/base1/fer_link01/fer_link11
-        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21
-        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21/fer_link31
-        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21/fer_link31/fer_link41
-        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21/fer_link31/fer_link41/fer_link51
-        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21/fer_link31/fer_link41/fer_link51/fer_link61
-        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21/fer_link31/fer_link41/fer_link51/fer_link61/fer_link71
-        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21/fer_link31/fer_link41/fer_link51/fer_link61/fer_link71/fer_link81
-        - /TF1/Tree1/base1/fer_link01/fer_link11/fer_link21/fer_link31/fer_link41/fer_link51/fer_link61/fer_link71/fer_link81/hand_base_link1
       Splitter Ratio: 0.5
-    Tree Height: 292
+    Tree Height: 383
   - Class: rviz_common/Help
     Name: Help
   - Class: rviz_common/Views
@@ -46,7 +36,7 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
-    - Acceleration_Scaling_Factor: 0.2
+    - Acceleration_Scaling_Factor: 0.15
       Class: moveit_rviz_plugin/MotionPlanning
       Enabled: true
       Move Group Namespace: ""
@@ -130,7 +120,17 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          i_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           idf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ids_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -150,7 +150,17 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          m_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           mdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          mds_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -170,7 +180,17 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          p_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           pdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          pds_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -190,7 +210,17 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          r_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           rdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rds_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -210,6 +240,11 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          t_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           tca_link:
             Alpha: 1
             Show Axes: false
@@ -221,6 +256,11 @@ Visualization Manager:
             Show Trail: false
             Value: true
           tdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tds_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -334,7 +374,17 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          i_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           idf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ids_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -354,7 +404,17 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          m_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           mdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          mds_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -374,7 +434,17 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          p_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           pdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          pds_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -394,7 +464,17 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          r_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           rdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          rds_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -414,6 +494,11 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          t_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           tca_link:
             Alpha: 1
             Show Axes: false
@@ -425,6 +510,11 @@ Visualization Manager:
             Show Trail: false
             Value: true
           tdf_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tds_link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -443,7 +533,7 @@ Visualization Manager:
         Show Robot Collision: false
         Show Robot Visual: true
       Value: true
-      Velocity_Scaling_Factor: 0.2
+      Velocity_Scaling_Factor: 0.15
     - Class: rviz_default_plugins/TF
       Enabled: true
       Filter (blacklist): ""
@@ -452,6 +542,78 @@ Visualization Manager:
       Frames:
         All Enabled: true
         base:
+          Value: true
+        black_key_0_note_22:
+          Value: true
+        black_key_10_note_46:
+          Value: true
+        black_key_11_note_49:
+          Value: true
+        black_key_12_note_51:
+          Value: true
+        black_key_13_note_54:
+          Value: true
+        black_key_14_note_56:
+          Value: true
+        black_key_15_note_58:
+          Value: true
+        black_key_16_note_61:
+          Value: true
+        black_key_17_note_63:
+          Value: true
+        black_key_18_note_66:
+          Value: true
+        black_key_19_note_68:
+          Value: true
+        black_key_1_note_25:
+          Value: true
+        black_key_20_note_70:
+          Value: true
+        black_key_21_note_73:
+          Value: true
+        black_key_22_note_75:
+          Value: true
+        black_key_23_note_78:
+          Value: true
+        black_key_24_note_80:
+          Value: true
+        black_key_25_note_82:
+          Value: true
+        black_key_26_note_85:
+          Value: true
+        black_key_27_note_87:
+          Value: true
+        black_key_28_note_90:
+          Value: true
+        black_key_29_note_92:
+          Value: true
+        black_key_2_note_27:
+          Value: true
+        black_key_30_note_94:
+          Value: true
+        black_key_31_note_97:
+          Value: true
+        black_key_32_note_99:
+          Value: true
+        black_key_33_note_102:
+          Value: true
+        black_key_34_note_104:
+          Value: true
+        black_key_35_note_-1:
+          Value: true
+        black_key_3_note_30:
+          Value: true
+        black_key_4_note_32:
+          Value: true
+        black_key_5_note_34:
+          Value: true
+        black_key_6_note_37:
+          Value: true
+        black_key_7_note_39:
+          Value: true
+        black_key_8_note_42:
+          Value: true
+        black_key_9_note_44:
           Value: true
         fer_link0:
           Value: true
@@ -473,7 +635,11 @@ Visualization Manager:
           Value: true
         hand_base_link:
           Value: true
+        i_tip_link:
+          Value: true
         idf_link:
+          Value: true
+        ids_link:
           Value: true
         ima_link:
           Value: true
@@ -481,7 +647,11 @@ Visualization Manager:
           Value: true
         ipf_link:
           Value: true
+        m_tip_link:
+          Value: true
         mdf_link:
+          Value: true
+        mds_link:
           Value: true
         mma_link:
           Value: true
@@ -489,7 +659,13 @@ Visualization Manager:
           Value: true
         mpf_link:
           Value: true
+        p_tip_link:
+          Value: true
         pdf_link:
+          Value: true
+        pds_link:
+          Value: true
+        piano:
           Value: true
         pma_link:
           Value: true
@@ -497,7 +673,11 @@ Visualization Manager:
           Value: true
         ppf_link:
           Value: true
+        r_tip_link:
+          Value: true
         rdf_link:
+          Value: true
+        rds_link:
           Value: true
         rma_link:
           Value: true
@@ -505,15 +685,135 @@ Visualization Manager:
           Value: true
         rpf_link:
           Value: true
+        saved_tag:
+          Value: true
+        t_tip_link:
+          Value: true
         tca_link:
           Value: true
         tcf_link:
           Value: true
         tdf_link:
           Value: true
+        tds_link:
+          Value: true
         tma_link:
           Value: true
         tmf_link:
+          Value: true
+        white_key_0_note_21:
+          Value: true
+        white_key_10_note_38:
+          Value: true
+        white_key_11_note_40:
+          Value: true
+        white_key_12_note_41:
+          Value: true
+        white_key_13_note_43:
+          Value: true
+        white_key_14_note_45:
+          Value: true
+        white_key_15_note_47:
+          Value: true
+        white_key_16_note_48:
+          Value: true
+        white_key_17_note_50:
+          Value: true
+        white_key_18_note_52:
+          Value: true
+        white_key_19_note_53:
+          Value: true
+        white_key_1_note_23:
+          Value: true
+        white_key_20_note_55:
+          Value: true
+        white_key_21_note_57:
+          Value: true
+        white_key_22_note_59:
+          Value: true
+        white_key_23_note_60:
+          Value: true
+        white_key_24_note_62:
+          Value: true
+        white_key_25_note_64:
+          Value: true
+        white_key_26_note_65:
+          Value: true
+        white_key_27_note_67:
+          Value: true
+        white_key_28_note_69:
+          Value: true
+        white_key_29_note_71:
+          Value: true
+        white_key_2_note_24:
+          Value: true
+        white_key_30_note_72:
+          Value: true
+        white_key_31_note_74:
+          Value: true
+        white_key_32_note_76:
+          Value: true
+        white_key_33_note_77:
+          Value: true
+        white_key_34_note_79:
+          Value: true
+        white_key_35_note_81:
+          Value: true
+        white_key_36_note_83:
+          Value: true
+        white_key_37_note_84:
+          Value: true
+        white_key_38_note_86:
+          Value: true
+        white_key_39_note_88:
+          Value: true
+        white_key_3_note_26:
+          Value: true
+        white_key_40_note_89:
+          Value: true
+        white_key_41_note_91:
+          Value: true
+        white_key_42_note_93:
+          Value: true
+        white_key_43_note_95:
+          Value: true
+        white_key_44_note_96:
+          Value: true
+        white_key_45_note_98:
+          Value: true
+        white_key_46_note_100:
+          Value: true
+        white_key_47_note_101:
+          Value: true
+        white_key_48_note_103:
+          Value: true
+        white_key_49_note_105:
+          Value: true
+        white_key_4_note_28:
+          Value: true
+        white_key_50_note_107:
+          Value: true
+        white_key_51_note_108:
+          Value: true
+        white_key_5_note_29:
+          Value: true
+        white_key_6_note_31:
+          Value: true
+        white_key_7_note_33:
+          Value: true
+        white_key_8_note_35:
+          Value: true
+        white_key_9_note_36:
+          Value: true
+        wrist_color_frame:
+          Value: true
+        wrist_color_optical_frame:
+          Value: true
+        wrist_depth_frame:
+          Value: true
+        wrist_depth_optical_frame:
+          Value: true
+        wrist_link:
           Value: true
       Marker Scale: 0.20000000298023224
       Name: TF
@@ -534,32 +834,251 @@ Visualization Manager:
                             hand_base_link:
                               ima_link:
                                 imf_link:
+                                  ids_link:
+                                    {}
                                   ipf_link:
                                     idf_link:
-                                      {}
+                                      i_tip_link:
+                                        {}
                               mma_link:
                                 mmf_link:
+                                  mds_link:
+                                    {}
                                   mpf_link:
                                     mdf_link:
-                                      {}
+                                      m_tip_link:
+                                        {}
                               pma_link:
                                 pmf_link:
+                                  pds_link:
+                                    {}
                                   ppf_link:
                                     pdf_link:
-                                      {}
+                                      p_tip_link:
+                                        {}
                               rma_link:
                                 rmf_link:
+                                  rds_link:
+                                    {}
                                   rpf_link:
                                     rdf_link:
-                                      {}
+                                      r_tip_link:
+                                        {}
                               tcf_link:
                                 tca_link:
                                   tma_link:
+                                    tds_link:
+                                      {}
                                     tmf_link:
                                       tdf_link:
-                                        {}
+                                        t_tip_link:
+                                          {}
+                              wrist_link:
+                                wrist_color_frame:
+                                  wrist_color_optical_frame:
+                                    piano:
+                                      {}
+                                wrist_depth_frame:
+                                  wrist_depth_optical_frame:
+                                    {}
+          saved_tag:
+            black_key_0_note_22:
+              {}
+            black_key_10_note_46:
+              {}
+            black_key_11_note_49:
+              {}
+            black_key_12_note_51:
+              {}
+            black_key_13_note_54:
+              {}
+            black_key_14_note_56:
+              {}
+            black_key_15_note_58:
+              {}
+            black_key_16_note_61:
+              {}
+            black_key_17_note_63:
+              {}
+            black_key_18_note_66:
+              {}
+            black_key_19_note_68:
+              {}
+            black_key_1_note_25:
+              {}
+            black_key_20_note_70:
+              {}
+            black_key_21_note_73:
+              {}
+            black_key_22_note_75:
+              {}
+            black_key_23_note_78:
+              {}
+            black_key_24_note_80:
+              {}
+            black_key_25_note_82:
+              {}
+            black_key_26_note_85:
+              {}
+            black_key_27_note_87:
+              {}
+            black_key_28_note_90:
+              {}
+            black_key_29_note_92:
+              {}
+            black_key_2_note_27:
+              {}
+            black_key_30_note_94:
+              {}
+            black_key_31_note_97:
+              {}
+            black_key_32_note_99:
+              {}
+            black_key_33_note_102:
+              {}
+            black_key_34_note_104:
+              {}
+            black_key_35_note_-1:
+              {}
+            black_key_3_note_30:
+              {}
+            black_key_4_note_32:
+              {}
+            black_key_5_note_34:
+              {}
+            black_key_6_note_37:
+              {}
+            black_key_7_note_39:
+              {}
+            black_key_8_note_42:
+              {}
+            black_key_9_note_44:
+              {}
+            white_key_0_note_21:
+              {}
+            white_key_10_note_38:
+              {}
+            white_key_11_note_40:
+              {}
+            white_key_12_note_41:
+              {}
+            white_key_13_note_43:
+              {}
+            white_key_14_note_45:
+              {}
+            white_key_15_note_47:
+              {}
+            white_key_16_note_48:
+              {}
+            white_key_17_note_50:
+              {}
+            white_key_18_note_52:
+              {}
+            white_key_19_note_53:
+              {}
+            white_key_1_note_23:
+              {}
+            white_key_20_note_55:
+              {}
+            white_key_21_note_57:
+              {}
+            white_key_22_note_59:
+              {}
+            white_key_23_note_60:
+              {}
+            white_key_24_note_62:
+              {}
+            white_key_25_note_64:
+              {}
+            white_key_26_note_65:
+              {}
+            white_key_27_note_67:
+              {}
+            white_key_28_note_69:
+              {}
+            white_key_29_note_71:
+              {}
+            white_key_2_note_24:
+              {}
+            white_key_30_note_72:
+              {}
+            white_key_31_note_74:
+              {}
+            white_key_32_note_76:
+              {}
+            white_key_33_note_77:
+              {}
+            white_key_34_note_79:
+              {}
+            white_key_35_note_81:
+              {}
+            white_key_36_note_83:
+              {}
+            white_key_37_note_84:
+              {}
+            white_key_38_note_86:
+              {}
+            white_key_39_note_88:
+              {}
+            white_key_3_note_26:
+              {}
+            white_key_40_note_89:
+              {}
+            white_key_41_note_91:
+              {}
+            white_key_42_note_93:
+              {}
+            white_key_43_note_95:
+              {}
+            white_key_44_note_96:
+              {}
+            white_key_45_note_98:
+              {}
+            white_key_46_note_100:
+              {}
+            white_key_47_note_101:
+              {}
+            white_key_48_note_103:
+              {}
+            white_key_49_note_105:
+              {}
+            white_key_4_note_28:
+              {}
+            white_key_50_note_107:
+              {}
+            white_key_51_note_108:
+              {}
+            white_key_5_note_29:
+              {}
+            white_key_6_note_31:
+              {}
+            white_key_7_note_33:
+              {}
+            white_key_8_note_35:
+              {}
+            white_key_9_note_36:
+              {}
       Update Interval: 0
       Value: true
+    - Class: rviz_default_plugins/Camera
+      Enabled: true
+      Far Plane Distance: 100
+      Image Rendering: background and overlay
+      Name: Camera
+      Overlay Alpha: 0.5
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /camera/wrist/color/image_rect_raw
+      Value: true
+      Visibility:
+        Grid: true
+        MotionPlanning: true
+        TF: true
+        Value: true
+      Zoom Factor: 1
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -578,30 +1097,32 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 2.011037588119507
+      Distance: 1.5795385837554932
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.037351567298173904
-        Y: 0.17680132389068604
-        Z: 0.4143766462802887
+        X: 0.4064169228076935
+        Y: 0.12641412019729614
+        Z: 0.2994039058685303
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4800000786781311
+      Pitch: 0.6150001287460327
       Target Frame: base
       Value: Orbit (rviz_default_plugins)
-      Yaw: 0.7269970178604126
+      Yaw: 5.780202388763428
     Saved: ~
 Window Geometry:
+  Camera:
+    collapsed: false
   Displays:
     collapsed: false
-  Height: 1011
+  Height: 1043
   Help:
     collapsed: false
   Hide Left Dock: false
@@ -610,9 +1131,9 @@ Window Geometry:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd00000001000000000000025900000395fc0200000005fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004400fffffffb000000100044006900730070006c006100790073010000003f000001aa000000cc00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006701000001ef000001e50000019600fffffffb0000000800480065006c0070000000029a0000006e0000006f00fffffffb0000000a00560069006500770073000000031f000000b5000000a900ffffff000004df0000039500000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd000000020000000000000259000003b5fc0200000005fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004400fffffffb000000100044006900730070006c006100790073010000003f00000205000000cc00fffffffb0000000800480065006c0070000000029a0000006e0000006f00fffffffb0000000a00560069006500770073000000031f000000b5000000a900fffffffb0000000c00430061006d006500720061010000024a000001aa0000001700ffffff00000001000001fc000003b5fc0200000001fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000003f000003b50000019600ffffff0000031f000003b500000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 1854
-  X: 66
-  Y: 32
+  Width: 1920
+  X: 0
+  Y: 0

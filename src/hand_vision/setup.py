@@ -4,14 +4,16 @@ package_name = 'hand_vision'
 
 setup(
     name=package_name,
-    version='0.1.0',
+    version='0.0.0',
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch/', ['launch/vision.launch.xml',
-                                                'launch/wrist_cam.launch.xml']),
+                                                'launch/wrist_track.launch.xml',
+                                                'launch/wrist_cam.launch.xml',
+                                                'launch/tpv_cam.launch.xml',]),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -25,6 +27,7 @@ setup(
             'hand_angle_node = hand_vision.hand_angle_node:main',
             'hand_joint_gui_node = hand_vision.hand_joint_gui_node:main',
             'hand_angle_quest = hand_vision.hand_angle_quest:main',
+            'wrist_tracker_node = hand_vision.wrist_tracker_node:main',
             'wrist_camera_node = hand_vision.wrist_camera_node:main',
             'yolo_node = hand_vision.yolo_node:main',
         ],

@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "BiDexHand: Design and Evaluation of an Open-Source 16-DoF Biomimetic Dexterous Hand"
+version: "4.0"
+date-released: "2025-01-01"
+url: "https://github.com/wengmister/BiDexHand"
+repository-code: "https://github.com/wengmister/BiDexHand"
+authors:
+  - family-names: "Weng"
+    given-names: "Zhengyang Kris"
+    orcid: "https://orcid.org/0009-0001-2525-4109"
+    website: "https://wengmister.github.io/"
+abstract: "Open source release of BiDexHand V4, a robotic hand featuring 16 degrees of freedom. It utilizes a cable-and-pulley system, with 15 servos arranged in N configuration to drive its 15 joints with tendon, and a 4-bar linkage driven 16th joint."
+keywords:
+  - "robotics"
+  - "dexterous hand"
+  - "biomimetic"
+  - "open-source"
+  - "ROS2"
+  - "manipulation"
+license: MIT
+preferred-citation:
+  type: article
+  title: "BiDexHand: Design and Evaluation of an Open-Source 16-DoF Biomimetic Dexterous Hand"
+  authors:
+    - family-names: "Weng"
+      given-names: "Zhengyang Kris"
+  year: 2025
+  url: "https://arxiv.org/abs/2504.14712"
+  repository: "arXiv"
+  identifiers:
+    - type: "arxiv"
+      value: "2504.14712"

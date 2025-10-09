@@ -225,10 +225,10 @@ class HandShadowingNode(Node):
         """
         if 11 <= index <= 14:
             # For finger pips, add the corresponding mcp flex angle (output index = pip index - 5)
-            return angle + self.joint_angles[index - 5] * 0.8
+            return angle + self.joint_angles[index - 5] * 0.2
         elif index == 10:
             # For thumb pip conversion, add thumb mcp angle (output index 5)
-            return angle + self.joint_angles[5] * 0.4
+            return angle - self.joint_angles[5] * 0.2
         else:
             return angle
 

@@ -1,0 +1,32 @@
+<launch>
+    <arg name="usb" default="/dev/ttyACM0"/>
+    <arg name="calibrating_offset" default="false"/>
+    <arg name="ik_verification" default="false"/>
+    
+    <!-- April Tag Node -->
+    <include file="$(find-pkg-share hand_calibration)/launch/atag.launch.xml">
+        <arg name="mode" value="calibration"/>
+    </include>
+
+    <!-- Wrist Cam Node -->
+    <include file="$(find-pkg-share hand_vision)/launch/wrist_cam.launch.xml"/>
+
+    <!-- Hand Kinematics Node -->
+    <include file="$(find-pkg-share hand_kinematics)/launch/hand_kinematics.launch.py"/>
+
+    <!-- Hand rviz node -->
+    <include file="$(find-pkg-share hand_rviz)/launch/hand_rviz.launch.py">
+        <arg name="js_gui" value="false"/>
+        <arg name="rviz_config" value="$(find-pkg-share hand_rviz)/config/calibration.rviz"/>
+        <arg name="calibrating_offset" value="$(var calibrating_offset)"/>
+        <arg name="is_calibrated" value="true"/>
+    </include>    
+
+    <!-- Servo control node -->
+     <include file="$(find-pkg-share hand_servo_control)/launch/calibrated_servo.launch.xml">
+        <arg name="usb" value="$(var usb)"/>
+    </include>
+
+    <!-- IK Verification Node -->
+    <node pkg="hand_servo_control" exec="calibrated_ik_verification_node" name="calibrated_ik_verifier" output="screen" if="$(var ik_verification)"/>
+</launch>

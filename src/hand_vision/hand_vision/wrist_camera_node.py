@@ -16,6 +16,8 @@ class WristCameraNode(Node):
         self.static_broadcaster = tf2_ros.StaticTransformBroadcaster(self)
 
 
+    # Static transform from robot wrist to camera frame
+    # Update based on your hand-eye calibration!!
     def broadcast_wrist_tf(self):
         """Broadcasts static transform from robot wrist to camera frame"""
         transform = TransformStamped()
@@ -24,15 +26,12 @@ class WristCameraNode(Node):
         transform.child_frame_id = 'wrist_link'
         transform.transform.translation.x = 0.009
         transform.transform.translation.y = 0.0
-        transform.transform.translation.z = 0.0353
-        # R = [  0.0000000,  1.0000000,  0.0000000;
-            #    0.0000000,  0.0000000,  1.0000000;
-            #    1.0000000,  0.0000000,  0.0000000 ]. 
+        transform.transform.translation.z = 0.0350
         # Maps to a correct camera orientation
-        transform.transform.rotation.x = 0.5
-        transform.transform.rotation.y = 0.5
-        transform.transform.rotation.z = 0.5
-        transform.transform.rotation.w = -0.5
+        transform.transform.rotation.x = 0.50212
+        transform.transform.rotation.y = 0.50212
+        transform.transform.rotation.z = 0.49787
+        transform.transform.rotation.w = -0.49787
 
 
         self.static_broadcaster.sendTransform(transform)

@@ -2,14 +2,10 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>hand_motion_shadowing</name>
-  <version>0.1.0</version>
-  <description>Node for hand gesture input to bidex hand servo commands</description>
+  <version>0.0.0</version>
+  <description>Node for mirroring usb cam input to hand servos</description>
   <maintainer email="wengmister@gmail.com">Zhengyang Kris Weng</maintainer>
-  <license>MIT</license>
-
-  <!-- Package dependencies -->
-  <depend>rclpy</depend>
-  <depend>std_msgs</depend>
+  <license>Apache-2.0</license>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

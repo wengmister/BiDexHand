@@ -1,0 +1,15 @@
+motor_calibrator:
+  ros__parameters:
+    mcp_abduction:
+      motor_index: 4
+      tag_frame: "tag_10"
+      min_angle: -25.0
+      max_angle: 25.0
+    mcp_flexion:
+      motor_index: 9
+      tag_frame: "tag_10"
+      hysteresis_clearance: -15.0
+    pip_flexion:
+      motor_index: 14
+      tag_frame: "tag_0"
+      hysteresis_clearance: -10.0
