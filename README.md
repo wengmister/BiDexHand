@@ -1,8 +1,8 @@
 # BiDexHand: Open-Source 16-DoF Biomimetic Dexterous Hand
 Author: [Zhengyang Kris Weng](https://wengmister.github.io/)   
-Preprint: [arXiv](https://arxiv.org/abs/2504.14712) 
+[arXiv](https://arxiv.org/abs/2504.14712) | [OnShape](https://cad.onshape.com/documents/01cd86c3e9db901b13d9f00a/w/85362aa967854376c1ce3eaf/e/cdd4272996feef8877266f8c?renderMode=0&uiState=68e7603e87a047038d7ce8cc) | [Blogpost](https://wengmister.github.io/#dexterous-hand)
 
-Open source release of biomimetic dexterous robotic hand, a 10-week individual project. This guide will help you build your own hand and get your started on the setup.
+Open source release of BiDexHand. This guide will help you build your own hand and get your started on the setup.
 
 [![Biomimetic Dexterous Hand Demonstration](https://img.youtube.com/vi/X8zVKlZNorc/0.jpg)](https://youtu.be/X8zVKlZNorc?si=lmVslFvECZyih0Kd)
 
@@ -23,18 +23,16 @@ The hand is controlled through provided `ROS2` packages found in `/src`. It prov
 
 # Hardware Setup
 
-STEP file for the cad asset can be found under `/cad_asset/_stp`, and individual STL file under `/cad_asset/_stl`.
+STEP file for the cad asset can be found under `/cad_asset/_stp`, and individual STL file under `/cad_asset/_stl`. Additionally, you can find CAD hosted online on [OnShape](https://cad.onshape.com/documents/01cd86c3e9db901b13d9f00a/w/85362aa967854376c1ce3eaf/e/cdd4272996feef8877266f8c?renderMode=0&uiState=68e7603e87a047038d7ce8cc).
 
 See [BOM.md](/BOM.md) for more details.
-
-Build instruction currently under construction, I'm planning on releasing it soon.
 
 For `V4`, build, flash and deploy `/scripts/Servo2040/servo2040_controller` to controller for the PWM version. Alternatively, use script from `V3` fork for SCS bus builds.
 - You'll need `pico-sdk` and `pimoroni-pico` modules to build the PWM project.
 
 # Environment Setup
 
-This project currently runs on `ROS2-JAZZY`. To build locally, run:
+This project is primarily tested on `ROS2-JAZZY`. To build locally, run:
 
     git clone https://github.com/wengmister/BiDexHand.git
     cd BiDexHand
@@ -46,6 +44,7 @@ Finally,
     . install/setup.bash
 
 # VR Setup
+
 If you plan to use Meta Quest for the motion shadowing demo, you can follow the build and deployment steps in [this repo](https://github.com/NU-MECH-ENG-495/vr-hand-tracking).
 
 
@@ -96,5 +95,23 @@ See [this repo](https://github.com/wengmister/franka-vr-teleop) on details about
 ### Franka VR Teleoperation    
 <img src="images/franka_teleop.gif" alt="Franka Teleop" width="500px">
 
+# Citation
+If you find this work helpful for your work or research, please consider citing as:
+
+    @misc{weng2025bidexhand,
+        title={BiDexHand: Design and Evaluation of an Open-Source 16-DoF Biomimetic Dexterous Hand}, 
+        author={Zhengyang Kris Weng},
+        year={2025},
+        eprint={2504.14712},
+        archivePrefix={arXiv},
+        primaryClass={cs.RO},
+        url={https://arxiv.org/abs/2504.14712}, 
+    }
+
 # License
 MIT
+
+# Related Repo
+[Franka VR Teleop](https://github.com/wengmister/franka-vr-teleop)  
+[VR Tracking App](https://github.com/wengmister/quest-wrist-tracker)  
+[VR dex-retargeting](https://github.com/wengmister/vr-dex-retargeting)  
