@@ -32,13 +32,13 @@
 | 28 | [90323A608](https://www.mcmaster.com/90323A608) | 18-8 Stainless Steel Low-Profile Precision Shoulder Screw | 15 | McMaster-Carr component |
 | 29 | [97307A111](https://www.mcmaster.com/97307A111) | Slotted 18-8 Stainless Steel Precision Shoulder Screw | 10 | McMaster-Carr component |
 | 30 | [91290A021](https://www.mcmaster.com/91290A021) | Alloy Steel Socket Head Screw | 61 | McMaster-Carr component |
-| 31 | [27051112](https://www.mcmaster.com/27051112) | Light Duty Dry-Running Flanged Sleeve Bearing | 26 | McMaster-Carr component |
+| 31 | [2705T112](https://www.mcmaster.com/2705T112) | Light Duty Dry-Running Flanged Sleeve Bearing | 26 | McMaster-Carr component |
 | 32 | [98089A201](https://www.mcmaster.com/98089A201) | 18-8 Stainless Steel Round Shim | 16 | McMaster-Carr component |
 | 33 | [92010A778](https://www.mcmaster.com/92010A778) | Passivated 18-8 Stainless Steel Phillips Flat Head Screw | 28 | McMaster-Carr component |
 | 34 | [90323A604](https://www.mcmaster.com/90323A604) | 18-8 Stainless Steel Low-Profile Precision Shoulder Screw | 3 | McMaster-Carr component |
 | 35 | [90323A612](https://www.mcmaster.com/90323A612) | 18-8 Stainless Steel Low-Profile Precision Shoulder Screw | 1 | McMaster-Carr component |
 | 36 | [7119N113](https://www.mcmaster.com/7119N113) | Ultra-Low-Friction Oil-Embedded Sleeve Bearing | 1 | McMaster-Carr component |
-| 37 | [66584K12](https://www.mcmaster.com/66584K12) | Oil-Embedded 841 Bronze Sleeve Bearing | 2 | McMaster-Carr component |
+| 37 | [6658K412](https://www.mcmaster.com/6658K412) | Oil-Embedded 841 Bronze Sleeve Bearing | 2 | McMaster-Carr component |
 | 38 | [91290A015](https://www.mcmaster.com/91290A015) | Alloy Steel Socket Head Screw | 39 | McMaster-Carr component |
 | 39 | [91292A028](https://www.mcmaster.com/91292A028) | 18-8 Stainless Steel Socket Head Screw | 10 | McMaster-Carr component |
 | 40 | [2006N111](https://www.mcmaster.com/2006N111) | 302 Stainless Steel Corrosion-Resistant Compression Springs | 10 | McMaster-Carr component |
